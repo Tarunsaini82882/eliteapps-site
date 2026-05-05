@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EliteApps</title>
+
+<link rel="icon" href="images/icon.png">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px 50px;
+}
+
+.logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  background: linear-gradient(90deg, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+/* 🔥 FIXED SPACING */
+.cta {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(to right, orange, red);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTION */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: orange;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 25px rgba(255,165,0,0.3);
+}
+
+.card img {
+  width: 70px;
+  border-radius: 14px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* BOX */
+.box {
+  background: rgba(255,255,255,0.05);
+  padding: 16px;
+  border-radius: 16px;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.faq-a {
+  display: none;
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+}
+
+/* ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.7s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero fade">
+  <img src="images/eliteapps.png" class="logo">
+  <div class="title">EliteApps 🚀</div>
+  <div class="subtitle">
+    Building high-quality digital products focused on performance, security, and real user value.
+  </div>
+
+  <div class="cta">
+    <a href="#" class="btn">Explore Apps</a>
+  </div>
+</div>
+
+<!-- APPS -->
+<div class="section fade">
+  <div class="section-title">Our Applications</div>
+
+  <div class="grid">
+
+    <div class="card" onclick="openPage('elitebattles.html')">
+      <img src="images/elitebattles.png">
+      <h3>EliteBattles India 🎮</h3>
+      <p>
+        Participate in competitive tournaments, challenge real players, and earn rewards through skill-based gameplay.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="images/elitesmm.png">
+      <h3>EliteSMM 📈</h3>
+      <p>
+        Upcoming platform designed for advanced social media growth, automation, and performance optimization tools.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section fade">
+  <div class="section-title">About EliteApps</div>
+  <div class="box">
+EliteApps is a modern development platform focused on creating high-performance applications across gaming and automation domains.  
+Our goal is to deliver reliable, scalable, and secure digital products that provide real-world value and a smooth user experience.
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="section fade">
+  <div class="section-title">Premium Features</div>
+  <div class="box">
+💎 Fast and reliable withdrawal systems with minimal processing delays<br>
+🚀 Priority customer support for quick issue resolution<br>
+🎯 Smart automation systems for better efficiency<br>
+⚡ Optimized performance for smooth and lag-free experience
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section fade">
+  <div class="section-title">Frequently Asked Questions</div>
+  <div class="box">
+
+    <div class="faq-item" onclick="toggle(this)">
+      <b>Is EliteBattles secure and safe to use?</b>
+      <div class="faq-a">
+        Yes, the platform uses advanced security systems along with anti-fraud monitoring to ensure safe usage.
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggle(this)">
+      <b>Does the platform involve gambling?</b>
+      <div class="faq-a">
+        No, all games are strictly skill-based and do not involve any form of betting or gambling.
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggle(this)">
+      <b>How long does withdrawal take?</b>
+      <div class="faq-a">
+        Withdrawals are typically processed within 1–24 hours depending on verification and system load.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section fade">
+  <div class="section-title">Contact & Support</div>
+  <div class="box">
+📧 Email: tarunraghuvanshi776@gmail.com<br><br>
+
+Telegram:  
+<a href="https://t.me/tarunraghuvanshi" style="color:orange">Join Community</a><br><br>
+
+Instagram:  
+<a href="https://www.instagram.com/_tarun.exe_" style="color:orange">@_tarun.exe_</a>
+  </div>
+</div>
+
+<div class="footer fade">
+© 2026 EliteApps. All Rights Reserved
+</div>
+
+<script>
+
+function toggle(el){
+  let a = el.querySelector(".faq-a");
+  a.style.display = a.style.display === "block" ? "none" : "block";
+}
+
+function openPage(page){
+  window.location.href = page;
+}
+
+const items = document.querySelectorAll(".fade");
+
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+    }
+  });
+});
+
+items.forEach(i=>obs.observe(i));
+
+</script>
+
+</body>
+</html>
